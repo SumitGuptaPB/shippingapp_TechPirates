@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_orderplacing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pb.nex26dv.shippingapp.orderplacing">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/senderEditText"
+                android:hint="@string/sender_name"
+                android:layout_above="@+id/sMobileEditText"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/sMobileEditText"
+                android:hint="@string/sender_mobile"
+                android:layout_alignBottom="@+id/imageView5"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPostalAddress"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/sPostalAddressEditText"
+                android:hint="@string/sender_postal_address"
+                android:layout_above="@+id/weightEditText"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="18dp"
+                android:layout_weight="2.64"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPostalAddress"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/sPostalCodeEditText"
+                android:hint="@string/sender_postal_code"
+                android:layout_above="@+id/weightEditText"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="18dp"
+                android:layout_weight="0.94"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPostalAddress"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/sCountryCodeEditText"
+                android:hint="@string/sender_country_code"
+                android:layout_above="@+id/weightEditText"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="18dp"
+                android:layout_weight="0.94"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/rNameEditText"
+                android:hint="@string/receiver_name"
+                android:layout_above="@+id/sMobileEditText"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.94" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/rMobileEditText"
+                android:hint="@string/receiver_mobile"
+                android:layout_alignBottom="@+id/imageView5"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.94" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPostalAddress"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/rPostalAddressEditText"
+                android:hint="@string/receiver_postal_address"
+                android:layout_above="@+id/weightEditText"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="18dp"
+                android:layout_weight="0.94"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPostalAddress"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/rPostalCodeEditText"
+                android:hint="@string/receiver_postal_code"
+                android:layout_above="@+id/weightEditText"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="18dp"
+                android:layout_weight="0.94"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/rCountryCodeEditText"
+                android:hint="@string/receiver_country_code"
+                android:layout_above="@+id/weightEditText"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/weightEditText"
+                android:hint="Weight (In Ounces)"
+                android:layout_above="@+id/order_camer_button"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="18dp"
+                android:layout_weight="0.94"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="For Dimension Click on Camera Button"
+                android:layout_width="match_parent"
+                android:id="@+id/textView14"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:editable="false"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/order_camer_button"
+                android:background="@drawable/ic_menu_camera"
+                android:layout_above="@+id/order_submit"
+                android:layout_alignParentStart="true"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/lengthEditText"
+                android:hint="Length (In Inch)"
+                android:layout_above="@+id/order_camer_button"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.94" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/widthEditText"
+                android:hint="Width (In Inch)"
+                android:layout_below="@+id/imageView5"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/heightEditText"
+                android:hint="Height (In Inch)"
+                android:layout_above="@+id/weightEditText"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="@string/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_submit"
+                android:layout_above="@+id/addtocart"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="@string/add_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_cart"
+                android:layout_above="@+id/cancel_order"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="@string/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_cancel"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/backbutton"-->
+            <!--android:onClick="OnSignUpClick"-->
+            <!--android:text="@string/label"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_weight="1.06" />-->
+            <Button
+                android:id="@+id/backbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1.06"
+                android:onClick="view"
+                android:text="@string/label" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_height="153dp"
+        android:background="@mipmap/troly"
+        android:id="@+id/imageView5"
+        android:gravity="center"
+        android:scaleType="center"
+        android:layout_width="162dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbarStyle="insideInset"
+        android:soundEffectsEnabled="true"
+        android:adjustViewBounds="false"
+        android:cropToPadding="true" />
+
+</RelativeLayout>

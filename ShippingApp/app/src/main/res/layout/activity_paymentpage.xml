@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_paymentpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pb.nex26dv.shippingapp.paymentpage">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/troly"
+        android:id="@+id/imageView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="CHOOSE PAYMENT METHOD"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textIsSelectable="false"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="301dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_below="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_height="match_parent" >
+
+            </RadioGroup>
+
+            <RadioButton
+                android:text="COD(Cash on Delivery)"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:id="@+id/radioButton" />
+
+            <RadioButton
+                android:text="Internet Banking"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/radioButton2" />
+
+            <RadioButton
+                android:text="Credit Card"
+                android:layout_width="match_parent"
+                android:id="@+id/radioButton3"
+                android:layout_height="55dp" />
+
+            <RadioButton
+                android:text="Debit Card"
+                android:layout_width="match_parent"
+                android:id="@+id/radioButton4"
+                android:layout_height="55dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:id="@+id/button5"
+                android:onClick="OnSignUpClick"
+                android:text="Submit"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="visible" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:id="@+id/button7"
+                android:onClick="OnSignUpClick"
+                android:text="Back"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

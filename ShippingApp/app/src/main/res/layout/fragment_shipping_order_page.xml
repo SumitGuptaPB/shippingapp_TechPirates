@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pb.nex26dv.shippingapp.shipping_order_page">
+
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/hello_blank_fragment" />-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/order_camer_button"
+                android:background="@android:drawable/ic_menu_camera"
+                android:layout_above="@+id/order_submit"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.94"
+                android:layout_height="70dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/editText21"
+                android:hint="Receiver Name"
+                android:layout_above="@+id/editText23"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText23"
+                android:hint="Mobile Number"
+                android:layout_alignBottom="@+id/imageView5"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPostalAddress"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/editText22"
+                android:hint="Postal Address"
+                android:layout_above="@+id/editText25"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="18dp"
+                android:layout_weight="2.64"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText24"
+                android:hint="Lenght (Inch)"
+                android:layout_above="@+id/order_camer_button"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/editText26"
+                android:hint="Height (Inch)"
+                android:layout_above="@+id/editText24"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/editText25"
+                android:hint="Weight (Inch)"
+                android:layout_below="@+id/imageView5"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_submit"
+                android:layout_above="@+id/addtocart"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="Add to Cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_cart"
+                android:layout_above="@+id/cancel_order"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="Cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_cancel"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/backbutton"
+                android:onClick="OnSignUpClick"
+                android:text="Back"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1.06" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_height="153dp"
+        android:background="@mipmap/cuscur1"
+        android:id="@+id/imageView5"
+        android:gravity="center"
+        android:scaleType="center"
+        android:layout_width="162dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbarStyle="insideInset"
+        android:soundEffectsEnabled="true"
+        android:adjustViewBounds="false"
+        android:cropToPadding="true" />
+
+</RelativeLayout>

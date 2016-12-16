@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pb.nex26dv.shippingapp.main_display_page"
+    android:background="@android:color/background_light">
+
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/hello_blank_fragment" />-->
+
+
+    <TextView
+        android:text="Saved Item(s)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/saved_items_home_image_button"
+        android:layout_alignStart="@+id/saved_items_home_image_button"
+        android:layout_alignEnd="@+id/saved_items_home_image_button"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipping_home_image_button"
+        android:layout_alignStart="@+id/shipping_home_image_button"
+        android:id="@+id/textView9"
+        android:layout_alignEnd="@+id/shipping_home_image_button"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@mipmap/newbanner"
+        android:id="@+id/imageView8"
+        android:scaleType="centerInside"
+        android:layout_marginTop="43dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="My Order(s)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/myorder_home_image_button"
+        android:layout_alignStart="@+id/myorder_home_image_button"
+        android:layout_alignEnd="@+id/myorder_home_image_button"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Info."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/imageButton7"
+        android:layout_alignStart="@+id/imageButton7"
+        android:layout_alignEnd="@+id/imageButton7"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/box"
+        android:id="@+id/saved_items_home_image_button"
+        android:layout_marginEnd="73dp"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/fastvan"
+        android:id="@+id/shipping_home_image_button"
+        android:layout_marginStart="55dp"
+        android:foregroundGravity="top|left"
+        android:layout_alignTop="@+id/saved_items_home_image_button"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ship"
+        android:id="@+id/myorder_home_image_button"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="102dp"
+        android:foregroundGravity="bottom"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/troly"
+        android:id="@+id/imageButton7"
+        android:layout_alignTop="@+id/myorder_home_image_button"
+        android:layout_alignStart="@+id/textView11" />
+
+</RelativeLayout>

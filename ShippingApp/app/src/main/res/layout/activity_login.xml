@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pb.nex26dv.shippingapp.loginActivity">
+
+    <Button
+        android:text="SignUP"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupbutton"
+        android:layout_above="@+id/register"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentStart="true"
+        android:layout_width="180dp"
+        android:onClick="onSignUpButtonClick" />
+
+    <TextView
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorLink="?android:attr/colorPressedHighlight"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="46dp" />
+
+    <TextView
+        android:text="Forgot Password?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:autoLink="web"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorLink="?android:attr/colorPressedHighlight"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter Email id"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/login_Email"
+        android:layout_above="@+id/login_Pass"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Please Enter Your password"
+        android:ems="10"
+        android:id="@+id/login_Pass"
+        android:layout_marginBottom="72dp"
+        android:layout_above="@+id/Login_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:background="@mipmap/cuscur"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="170dp" />
+
+    <Button
+        android:text="Login"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login_button"
+        android:layout_width="180dp"
+        android:layout_alignBaseline="@+id/signupbutton"
+        android:layout_alignBottom="@+id/signupbutton"
+        android:layout_alignParentEnd="true"
+        android:onClick="onLoginButtonClick" />
+
+</RelativeLayout>

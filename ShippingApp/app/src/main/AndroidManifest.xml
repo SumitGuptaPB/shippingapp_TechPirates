@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pb.nex26dv.shippingapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+        <activity android:name=".loginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".orderplacing">
+            <intent-filter>
+                <action android:name="com.pb.nex26dv.shippingapp.orderplacing" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".registration">
+            <intent-filter>
+                <action android:name="com.pb.nex26dv.shippingapp.registration" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".wishlist">
+            <intent-filter>
+                <action android:name="com.pb.nex26dv.shippingapp.wishlist" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".conformationpage">
+            <intent-filter>
+                <action android:name="com.pb.nex26dv.shippingapp.conformationpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".paymentpage">
+            <intent-filter>
+                <action android:name="com.pb.nex26dv.shippingapp.paymentpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".paymentconform" />
+        <activity android:name=".myorders" >
+            <intent-filter>
+            <action android:name="com.pb.nex26dv.shippingapp.myorders" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Splashscreen"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ////////*****************=DRWAER CODE=************************//////// -->
+        <activity
+            android:name=".nva_drawer"
+            android:label="@string/title_activity_nva_drawer"
+            android:parentActivityName=".loginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pb.nex26dv.shippingapp.loginActivity" />
+
+            <intent-filter>
+                <action android:name="com.pb.nex26dv.shippingapp.nva_drawer" />
+                <!-- <action android:name="com.pb.nex26dv.shippingapp.shipping_order_page" /> -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.pb.nex26dv.shippingapp.shipping_order_page" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- ////////*****************=DRWAER CODE=************************//////// -->
+        <activity android:name=".main_home_page">
+            <intent-filter>
+                <action android:name="com.pb.nex26dv.shippingapp..main_home_page" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-feature android:name="android.hardware.camera"/>
+        <uses-permission android:name="android.permission.CAMERA"/>
+    </application>
+
+</manifest>

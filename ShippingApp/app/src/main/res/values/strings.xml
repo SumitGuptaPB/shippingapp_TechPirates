@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Shipping App</string>
+    <string name="title_activity_nva_drawer">nva_drawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Constants for Hints for order placing activity-->
+    <!-- Edit text constants-->
+    <string name="sender_name">Sender Name</string>
+    <string name="sender_mobile">Sender Mobile number</string>
+    <string name="sender_postal_address">Sender Postal Address</string>
+    <string name="sender_postal_code">Sender Postal Code</string>
+    <string name="sender_country_code">Sender Country Code</string>
+    <string name="receiver_name">Receiver Name</string>
+    <string name="receiver_mobile">Receiver Mobile Number</string>
+    <string name="receiver_postal_address">Receiver Postal Address</string>
+    <string name="receiver_postal_code">Receiver Postal Code</string>
+    <string name="weight">Weight</string>
+    <string name="length">Length</string>
+    <string name="height">Height</string>
+    <string name="width">Width</string>
+    <string name="receiver_country_code">Receiver Country Code</string>
+
+    <!--button constants-->
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="label">View Label</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

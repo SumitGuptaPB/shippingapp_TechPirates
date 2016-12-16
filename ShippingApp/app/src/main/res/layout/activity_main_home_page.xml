@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pb.nex26dv.shippingapp.main_home_page"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:text="Shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/shipping_image_button"
+        android:layout_alignStart="@+id/shipping_image_button" />
+
+    <TextView
+        android:text="Saved Item(s)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/savedorders_image_button"
+        android:layout_alignStart="@+id/savedorders_image_button" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/troly"
+        android:id="@+id/info_button"
+        android:layout_alignTop="@+id/myorder_image_button"
+        android:layout_alignEnd="@+id/textView15" />
+
+    <TextView
+        android:text="My Order(s)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/textView21"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_alignEnd="@+id/myorder_image_button"
+        android:layout_alignStart="@+id/myorder_image_button" />
+
+    <TextView
+        android:text="Info"
+        android:layout_height="20dp"
+        android:id="@+id/textView21"
+        android:textAlignment="center"
+        android:layout_width="60dp"
+        android:layout_below="@+id/info_button"
+        android:layout_alignStart="@+id/info_button"
+        android:layout_marginTop="13dp"
+        android:layout_alignEnd="@+id/info_button" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/box"
+        android:id="@+id/savedorders_image_button"
+        android:layout_marginEnd="42dp"
+        android:layout_alignTop="@+id/shipping_image_button"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:background="@mipmap/pb_logo"
+        android:id="@+id/imageView11"
+        android:scaleType="matrix"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="80dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ship"
+        android:id="@+id/shipping_image_button"
+        android:layout_marginStart="36dp"
+        android:foregroundGravity="bottom"
+        android:layout_above="@+id/textView15"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/fastvan"
+        android:id="@+id/myorder_image_button"
+        android:foregroundGravity="top|left"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/textView19"
+        android:layout_alignEnd="@+id/textView19"
+        android:layout_marginEnd="11dp" />
+
+</RelativeLayout>
